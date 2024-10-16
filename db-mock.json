@@ -171,10 +171,10 @@
       "image": "butik-home.png"
     },
     {
-      "id": "country-pedia",
+      "id": "countrypedia",
       "category": "html",
-      "title": "Trello Clone",
-      "image": "trello-clone.png"
+      "title": "CountryPedia",
+      "image": "countrypedia-home.png"
     }
   ],
   "ecommerce-web-app": [
@@ -248,6 +248,273 @@
             "Toast messages for cart updates (add/increase/decrease).",
             "Display tax in the cart popover, not only in the cart page."
           ]
+        }
+      ]
+    }
+  ],
+  "portfolio-website": [
+    {
+      "title": "Portfolio website",
+      "skills": [
+        "React",
+        "TypeScript",
+        "SCSS",
+        "React Router",
+        "Responsive Design"
+      ],
+      "views": [
+        {
+          "id": 1,
+          "title": "Home",
+          "image": "portfolio-home.png"
+        },
+        {
+          "id": 2,
+          "title": "About",
+          "image": "portfolio-about.png"
+        },
+        {
+          "id": 3,
+          "title": "Experience",
+          "image": "portfolio-experience.png"
+        },
+        {
+          "id": 4,
+          "title": "Projects",
+          "image": "portfolio-projects.png"
+        }
+      ],
+      "details": [
+        "A portfolio website built using React functional components.",
+        "A responsive design that adapts to various screen sizes.",
+        "A clean and modern design that showcases my skills and experience.",
+        "A user-friendly interface that allows visitors to navigate easily."
+      ],
+      "technologies": [
+        "React.js: Provides good user experience through Virtual DOM.",
+        "SCSS: Enhances styling capabilities.",
+        "React Router DOM: Creates separate URLs for different sections of the website."
+      ],
+      "improvements": [
+        {
+          "improvement": "Dark Mode",
+          "description": "Adding a dark mode feature would provide users with an alternative color scheme that is easier on the eyes, especially in low-light environments."
+        },
+        {
+          "improvement": "Contact Form",
+          "description": "Implementing a contact form would allow visitors to get in touch with me directly through the website, making it easier to connect."
+        },
+        {
+          "improvement": "Animations",
+          "description": "Adding subtle animations to the website would enhance the user experience and make the site more engaging."
+        },
+        {
+          "improvement": "SEO Optimization",
+          "description": "Optimizing the website for search engines would improve its visibility and help attract more visitors."
+        }
+      ]
+    }
+  ],
+  "trello-clone": [
+    {
+      "title": "Trello Clone",
+      "skills": [
+        "React",
+        "TypeScript",
+        "SCSS",
+        "React Router",
+        "Drag and Drop",
+        "Responsive Design"
+      ],
+      "views": [
+        {
+          "id": 1,
+          "title": "Home",
+          "image": "trello-clone.png"
+        }
+      ],
+      "details": [
+        "A Trello clone built using React functional components.",
+        "A responsive design that adapts to various screen sizes.",
+        "Drag-and-drop functionality for moving cards between lists.",
+        "A clean and modern design that mimics the look and feel of Trello."
+      ],
+      "technologies": [
+        "React.js: Provides good user experience through Virtual DOM.",
+        "SCSS: Enhances styling capabilities.",
+        "React Router DOM: Creates separate URLs for different sections of the website.",
+        "React Beautiful DnD: Implements drag-and-drop functionality."
+      ],
+      "improvements": [
+        {
+          "improvement": "User Authentication",
+          "description": "Adding user authentication would allow users to create accounts, log in, and save their boards and cards."
+        },
+        {
+          "improvement": "Real-Time Updates",
+          "description": "Implementing real-time updates would allow users to see changes made by other users in real time, similar to the actual Trello app."
+        },
+        {
+          "improvement": "Board Templates",
+          "description": "Adding board templates would provide users with pre-designed boards for common use cases, making it easier to get started."
+        },
+        {
+          "improvement": "Search Functionality",
+          "description": "Implementing search functionality would allow users to quickly find boards, cards, and lists within the app."
+        }
+      ]
+    }
+  ],
+  "marmak": [
+    {
+      "title": "MarMak Mechanika Samochodowa",
+      "skills": ["HTML", "CSS", "SCSS", "Bootstrap", "JavaScript"],
+      "views": [
+        {
+          "id": 1,
+          "title": "Home",
+          "image": "marmak-home.png"
+        },
+        {
+          "id": 2,
+          "title": "Services",
+          "image": "marmak-services.png"
+        },
+        {
+          "id": 3,
+          "title": "Contact",
+          "image": "marmak-contact.png"
+        }
+      ],
+      "details": [
+        "A website for a car mechanic business built using HTML, CSS, and JavaScript.",
+        "A clean and professional design that showcases the services offered by the business.",
+        "A responsive design that adapts to various screen sizes.",
+        "A contact form that allows visitors to get in touch with the business."
+      ],
+      "technologies": [
+        "HTML: Provides the structure of the website.",
+        "CSS: Styles the website and makes it visually appealing.",
+        "Bootstrap: Provides pre-designed components for faster development.",
+        "JavaScript: Adds interactivity and functionality to the website."
+      ],
+      "improvements": [
+        {
+          "improvement": "SEO Optimization",
+          "description": "Optimizing the website for search engines would improve its visibility and help attract more visitors."
+        },
+        {
+          "improvement": "Performance Optimization",
+          "description": "Improving the performance of the website would reduce load times and provide a better user experience."
+        },
+        {
+          "improvement": "Content Updates",
+          "description": "Regularly updating the content of the website would keep it fresh and engaging for visitors."
+        },
+        {
+          "improvement": "Social Media Integration",
+          "description": "Integrating social media links and feeds would allow visitors to connect with the business on various platforms."
+        }
+      ]
+    }
+  ],
+  "butik": [
+    {
+      "title": "Butik Irena",
+      "skills": ["HTML", "CSS", "SCSS", "Bootstrap", "JavaScript"],
+      "views": [
+        {
+          "id": 1,
+          "title": "Home",
+          "image": "butik-home.png"
+        },
+        {
+          "id": 2,
+          "title": "Products",
+          "image": "butik-products.png"
+        },
+        {
+          "id": 3,
+          "title": "Contact",
+          "image": "butik-contact.png"
+        }
+      ],
+      "details": [
+        "A website for a boutique business built using HTML, CSS, and JavaScript.",
+        "A clean and modern design that showcases the products offered by the business.",
+        "A responsive design that adapts to various screen sizes.",
+        "A contact form that allows visitors to get in touch with the business."
+      ],
+      "technologies": [
+        "HTML: Provides the structure of the website.",
+        "CSS: Styles the website and makes it visually appealing.",
+        "Bootstrap: Provides pre-designed components for faster development.",
+        "JavaScript: Adds interactivity and functionality to the website."
+      ],
+      "improvements": [
+        {
+          "improvement": "SEO Optimization",
+          "description": "Optimizing the website for search engines would improve its visibility and help attract more visitors."
+        },
+        {
+          "improvement": "Performance Optimization",
+          "description": "Improving the performance of the website would reduce load times and provide a better user experience."
+        },
+        {
+          "improvement": "Content Updates",
+          "description": "Regularly updating the content of the website would keep it fresh and engaging for visitors."
+        },
+        {
+          "improvement": "Social Media Integration",
+          "description": "Integrating social media links and feeds would allow visitors to connect with the business on various platforms."
+        }
+      ]
+    }
+  ],
+  "countrypedia": [
+    {
+      "title": "CountryPedia",
+      "skills": ["HTML", "CSS", "Bootstrap", "JavaScript"],
+      "views": [
+        {
+          "id": 1,
+          "title": "Home",
+          "image": "countrypedia-home.png"
+        },
+        {
+          "id": 2,
+          "title": "Country Details",
+          "image": "countrypedia-details.png"
+        }
+      ],
+      "details": [
+        "A website that provides information about countries built using HTML, CSS, and JavaScript.",
+        "A clean and modern design that showcases the information about each country.",
+        "A responsive design that adapts to various screen sizes.",
+        "A search functionality that allows users to find specific countries."
+      ],
+      "technologies": [
+        "HTML: Provides the structure of the website.",
+        "CSS: Styles the website and makes it visually appealing.",
+        "Bootstrap: Provides pre-designed components for faster development.",
+        "JavaScript: Adds interactivity and functionality to the website."
+      ],
+      "improvements": [
+        {
+          "improvement": "API Integration",
+          "description": "Integrating a RESTful API would allow the website to fetch real-time data about countries, such as population, area, and currency."
+        },
+        {
+          "improvement": "Dynamic Search",
+          "description": "Implementing a dynamic search functionality would allow users to search for countries as they type, providing instant results."
+        },
+        {
+          "improvement": "Filtering Options",
+          "description": "Adding filtering options would allow users to filter countries based on criteria such as region, population, and area."
+        },
+        {
+          "improvement": "Map Integration",
+          "description": "Integrating interactive maps would provide users with a visual representation of each country's location and geographical features."
         }
       ]
     }
