@@ -1,28 +1,28 @@
 {
   "about-me": [
     {
-      "id": 1,
+      "id": "1",
       "year": 2021,
       "title": "Łódź University of Technology",
       "description": "I hold a bachelor's degree from the Faculty of Electrical, Electronic, Computer, and Control Engineering, specializing in Power Engineering. During my studies, I participated in workshops that introduced me to programming and sparked my interest in software development.",
       "icon": "fa-solid fa-graduation-cap"
     },
     {
-      "id": 2,
+      "id": "2",
       "year": 2022,
       "title": "First commercial website as freelancer",
       "description": "My first commercial project was a simple website I built for a family member who runs a car mechanic business. I took on the challenge of creating a functional and visually appealing website using HTML, CSS/SCSS, and JavaScript.",
       "icon": "fa-solid fa-wrench"
     },
     {
-      "id": 3,
+      "id": "3",
       "year": 2022,
       "title": "First software developer job",
       "description": "My first software development job was at Fujitsu, where I started as a full-time intern and continue to work as a Frontend Developer. Throughout my time here, I've been involved in various projects that have allowed me to deepen my skills and experience.",
       "icon": "fa-solid fa-laptop-code"
     },
     {
-      "id": 4,
+      "id": "4",
       "year": 2024,
       "title": "AWS Certified Associate Developer",
       "description": "I am a certified AWS Associate Developer, a certification I achieved after dedicating significant time and effort to mastering cloud technologies. Preparing for the exam was a challenging but rewarding experience.",
@@ -31,7 +31,7 @@
   ],
   "experience": [
     {
-      "id": 1,
+      "id": "1",
       "company": "Fujitsu Technology Solutions",
       "positions": [
         {
@@ -70,7 +70,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "company": "Freelancer Web Development",
       "positions": [
         {
@@ -190,22 +190,22 @@
       ],
       "views": [
         {
-          "id": 1,
+          "id": "1",
           "title": "Home",
           "image": "ecommerce-home.png"
         },
         {
-          "id": 2,
+          "id": "2",
           "title": "Product Details",
           "image": "ecommerce-product-details.png"
         },
         {
-          "id": 3,
+          "id": "3",
           "title": "Cart",
           "image": "ecommerce-cart.png"
         },
         {
-          "id": 4,
+          "id": "4",
           "title": "Checkout",
           "image": "ecommerce-checkout.png"
         }
@@ -264,22 +264,22 @@
       ],
       "views": [
         {
-          "id": 1,
+          "id": "1",
           "title": "Home",
           "image": "portfolio-home.png"
         },
         {
-          "id": 2,
+          "id": "2",
           "title": "About",
           "image": "portfolio-about.png"
         },
         {
-          "id": 3,
+          "id": "3",
           "title": "Experience",
           "image": "portfolio-experience.png"
         },
         {
-          "id": 4,
+          "id": "4",
           "title": "Projects",
           "image": "portfolio-projects.png"
         }
@@ -328,7 +328,7 @@
       ],
       "views": [
         {
-          "id": 1,
+          "id": "1",
           "title": "Home",
           "image": "trello-clone.png"
         }
@@ -371,17 +371,17 @@
       "skills": ["HTML", "CSS", "SCSS", "Bootstrap", "JavaScript"],
       "views": [
         {
-          "id": 1,
+          "id": "1",
           "title": "Home",
           "image": "marmak-home.png"
         },
         {
-          "id": 2,
+          "id": "2",
           "title": "Services",
           "image": "marmak-services.png"
         },
         {
-          "id": 3,
+          "id": "3",
           "title": "Contact",
           "image": "marmak-contact.png"
         }
@@ -424,17 +424,17 @@
       "skills": ["HTML", "CSS", "SCSS", "Bootstrap", "JavaScript"],
       "views": [
         {
-          "id": 1,
+          "id": "1",
           "title": "Home",
           "image": "butik-home.png"
         },
         {
-          "id": 2,
+          "id": "2",
           "title": "Products",
           "image": "butik-products.png"
         },
         {
-          "id": 3,
+          "id": "3",
           "title": "Contact",
           "image": "butik-contact.png"
         }
@@ -477,12 +477,12 @@
       "skills": ["HTML", "CSS", "Bootstrap", "JavaScript"],
       "views": [
         {
-          "id": 1,
+          "id": "1",
           "title": "Home",
           "image": "countrypedia-home.png"
         },
         {
-          "id": 2,
+          "id": "2",
           "title": "Country Details",
           "image": "countrypedia-details.png"
         }
