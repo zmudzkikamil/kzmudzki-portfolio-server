@@ -1,0 +1,255 @@
+{
+  "about-me": [
+    {
+      "id": 1,
+      "year": 2021,
+      "title": "Łódź University of Technology",
+      "description": "I hold a bachelor's degree from the Faculty of Electrical, Electronic, Computer, and Control Engineering, specializing in Power Engineering. During my studies, I participated in workshops that introduced me to programming and sparked my interest in software development.",
+      "icon": "fa-solid fa-graduation-cap"
+    },
+    {
+      "id": 2,
+      "year": 2022,
+      "title": "First commercial website as freelancer",
+      "description": "My first commercial project was a simple website I built for a family member who runs a car mechanic business. I took on the challenge of creating a functional and visually appealing website using HTML, CSS/SCSS, and JavaScript.",
+      "icon": "fa-solid fa-wrench"
+    },
+    {
+      "id": 3,
+      "year": 2022,
+      "title": "First software developer job",
+      "description": "My first software development job was at Fujitsu, where I started as a full-time intern and continue to work as a Frontend Developer. Throughout my time here, I've been involved in various projects that have allowed me to deepen my skills and experience.",
+      "icon": "fa-solid fa-laptop-code"
+    },
+    {
+      "id": 4,
+      "year": 2024,
+      "title": "AWS Certified Associate Developer",
+      "description": "I am a certified AWS Associate Developer, a certification I achieved after dedicating significant time and effort to mastering cloud technologies. Preparing for the exam was a challenging but rewarding experience.",
+      "icon": "fa-brands fa-aws"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "company": "Fujitsu Technology Solutions",
+      "positions": [
+        {
+          "title": "Software Developer",
+          "period": "2024/05-present",
+          "description": "I have made a substantial impact on the architecture of a large-scale application, helping to shape the software’s development in this role. I've worked in a fully integrated team setup, collaborating with scrum masters, QA specialists, developers, product owners, and designers. Our project serves a diverse user base, from young students to educators, and meets WCAG 2.1 AA Accessibility standards. Maintaining responsiveness and compatibility across all devices and platforms, the application is set for ongoing evolution and long-term success.",
+          "skills": [
+            "React",
+            "TypeScript",
+            "WCAG 2.1 AA",
+            "AWS",
+            "Azure",
+            "PWA"
+          ]
+        },
+        {
+          "title": "Associate Software Developer",
+          "period": "2023/04-2024/04",
+          "description": "While working as an Assistant, I transitioned into a frontend role on a React TypeScript project, which led to my promotion to Associate Software Developer. Collaborating with a Japanese product owner, the project targeted UK-based clients. This gave me valuable experience in an international team, and I grew through active participation in code reviews and leading meetings such as refinement and daily stand-ups.",
+          "skills": [
+            "React",
+            "TypeScript",
+            "React Query",
+            "Unit Tests",
+            "Redux Toolkit",
+            "Zustand",
+            "React Hook Form"
+          ]
+        },
+        {
+          "title": "Assistant Software Developer",
+          "period": "2022/10-2023/04",
+          "description": "At Fujitsu, I began as an Assistant Software Developer, working on a jQuery project to become familiar with scrum and legacy code. Later, I gained hands-on experience writing end-to-end tests in Cypress for a TypeScript-based Angular project, contributing to its ongoing development and ensuring code quality.",
+          "skills": ["Cypress", "e2e tests", "TypeScript", "jQuery", "Scrum"]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "company": "Freelancer Web Development",
+      "positions": [
+        {
+          "title": "Web Developer",
+          "period": "2021-2022",
+          "description": "As a Freelance Web Developer, I created custom websites tailored to client needs, focusing on clean design and intuitive user experience. One of my key projects was for a car mechanic, where I balanced functionality with a professional look. I also worked on a boutique project that explored various design approaches, but it didn't reach production.",
+          "skills": [
+            "HTML",
+            "CSS",
+            "SCSS",
+            "Bootstrap",
+            "JavaScript",
+            "Freelance",
+            "Web Design"
+          ]
+        }
+      ]
+    }
+  ],
+  "knowledge": [
+    {
+      "category": "basics",
+      "level": "80%",
+      "skills": ["HTML", "CSS", "JavaScript", "TypeScript"]
+    },
+    {
+      "category": "react",
+      "level": "85%",
+      "skills": [
+        "React.js",
+        "React Hook Form",
+        "React Query",
+        "Zod",
+        "TanStack Table",
+        "React Router"
+      ]
+    },
+    {
+      "category": "styling",
+      "level": "75%",
+      "skills": ["SCSS", "Tailwind CSS", "Styled Components", "CSS Modules"]
+    },
+    {
+      "category": "testing",
+      "level": "70%",
+      "skills": [
+        "Jest",
+        "React Testing Library",
+        "Cypress",
+        "End-to-End Testing"
+      ]
+    },
+    {
+      "category": "backend",
+      "level": "60%",
+      "skills": ["Node.js", "Nest.js", "SQLite"]
+    },
+    {
+      "category": "other",
+      "level": "75%",
+      "skills": [
+        "Git",
+        "Agile/Scrum",
+        "Webpack",
+        "AWS Certified Developer - Associate"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "ecommerce-web-app",
+      "category": "react",
+      "title": "eCommerce web-app",
+      "image": "ecommerce-home.png"
+    },
+    {
+      "id": "portfolio-website",
+      "category": "react",
+      "title": "Portfolio website",
+      "image": "portfolio-home.png"
+    },
+    {
+      "id": "trello-clone",
+      "category": "react",
+      "title": "Trello Clone",
+      "image": "trello-clone.png"
+    },
+    {
+      "id": "marmak",
+      "category": "html",
+      "title": "MarMak Mechanika Samochodowa",
+      "image": "marmak-home.png"
+    },
+    {
+      "id": "butik",
+      "category": "html",
+      "title": "Butik Irena",
+      "image": "butik-home.png"
+    },
+    {
+      "id": "country-pedia",
+      "category": "html",
+      "title": "Trello Clone",
+      "image": "trello-clone.png"
+    }
+  ],
+  "ecommerce-web-app": [
+    {
+      "title": "eCommerce web-app",
+      "skills": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "React Router",
+        "Context API",
+        "Responsive Design"
+      ],
+      "views": [
+        {
+          "id": 1,
+          "title": "Home",
+          "image": "ecommerce-home.png"
+        },
+        {
+          "id": 2,
+          "title": "Product Details",
+          "image": "ecommerce-product-details.png"
+        },
+        {
+          "id": 3,
+          "title": "Cart",
+          "image": "ecommerce-cart.png"
+        },
+        {
+          "id": 4,
+          "title": "Checkout",
+          "image": "ecommerce-checkout.png"
+        }
+      ],
+      "details": [
+        "An eCommerce app built using React class components",
+        "Filtering products by category name (all, clothes, tech).",
+        "Ability to add/remove products and change their amounts in the cart.",
+        "Ability to change product attributes (color, capacity, size, etc.).",
+        "Selected options of added products are visible in both cart overlay and cart page.",
+        "Ability to switch between available currencies.",
+        "Currency and cart popovers close by clicking outside."
+      ],
+      "technologies": [
+        "React.js: Provides good user experience through Virtual DOM.",
+        "Redux Toolkit: Manages the state, preventing props drilling.",
+        "React Router DOM: Creates separate URLs for categories and products.",
+        "SCSS: Enhances styling capabilities.",
+        "GraphQL (Apollo): Fetches data from the API."
+      ],
+      "improvements": [
+        {
+          "improvement": "TypeScript Migration",
+          "description": "GraphQL Codegen could generate reusable types for the frontend. TypeScript would reduce bugs and provide better autosuggestions."
+        },
+        {
+          "improvement": "Hooks Refactor",
+          "description": "Migrating from class components to hooks would simplify the codebase and keep it up-to-date with the latest React features."
+        },
+        {
+          "improvement": "Thumbnail Addition",
+          "description": "Adding product thumbnails in the API ensures the best-looking photo is displayed, improving the overall product presentation."
+        },
+        {
+          "improvement": "UX Improvements",
+          "description-details": [
+            "Ability to change attributes in cart popover.",
+            "Clickable logo to redirect to the all categories listing page.",
+            "Skeleton loaders instead of spinners for a smoother UX.",
+            "Toast messages for cart updates (add/increase/decrease).",
+            "Display tax in the cart popover, not only in the cart page."
+          ]
+        }
+      ]
+    }
+  ]
+}
