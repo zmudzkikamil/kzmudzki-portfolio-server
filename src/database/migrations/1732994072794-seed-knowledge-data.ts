@@ -1,10 +1,12 @@
-import { QueryRunner } from 'typeorm';
 import { Knowledge } from '../../knowledge/knowledge.entity';
+import { MigrationInterface, QueryRunner } from 'typeorm';
 
-export class SeedKnowledge {
+export class SeedKnowledgeData1732994072794 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
-    // Insert initial data into the 'knowledge' table
-    await queryRunner.manager.insert(Knowledge, [
+    const knowledgeRepository =
+      await queryRunner.manager.getRepository(Knowledge);
+
+    await knowledgeRepository.insert([
       {
         category: 'basics',
         level: '80%',
@@ -31,7 +33,6 @@ export class SeedKnowledge {
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
-    // Delete all data from the 'knowledge' table (optional, if you need to roll back the seeder)
     await queryRunner.manager.delete(Knowledge, {});
   }
 }
