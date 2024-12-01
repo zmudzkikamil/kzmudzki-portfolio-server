@@ -7,6 +7,7 @@ import { AboutMe } from './about-me/about-me.entity';
 import { Position } from './experience/position.entity';
 import { Experience } from './experience/experience.entity';
 import { Knowledge } from './knowledge/knowledge.entity';
+import { ProjectsModule } from './projects/projects.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { Knowledge } from './knowledge/knowledge.entity';
     AboutMeModule,
     ExperienceModule,
     KnowledgeModule,
+    ProjectsModule,
   ],
 })
 export class AppModule {}
