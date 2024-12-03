@@ -7,11 +7,11 @@ export class ProjectsController {
 
   @Get()
   findAll() {
-    return this.projectsService.findAll();
+    return this.projectsService.findAllSimplified();
   }
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.projectsService.findOne(id);
+    return this.projectsService.findDetailedById(id);
   }
 }

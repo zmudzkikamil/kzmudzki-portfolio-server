@@ -3,18 +3,20 @@ import { Project } from './project.entity';
 
 @Entity()
 export class Improvement {
-  @PrimaryGeneratedColumn()
+  @PrimaryGeneratedColumn('uuid')
   id: string;
 
   @Column()
   improvement: string;
 
-  @Column()
-  description: string;
+  @Column({ nullable: true })
+  description?: string;
 
-  @Column('simple-array', { nullable: true })
+  @Column('simple-array', { nullable: true }) // Optional array of detailed descriptions
   descriptionDetails?: string[];
 
-  @ManyToOne(() => Project, (project) => project.improvements)
+  @ManyToOne(() => Project, (project) => project.improvements, {
+    onDelete: 'CASCADE',
+  })
   project: Project;
 }

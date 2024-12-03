@@ -1,0 +1,296 @@
+import { Improvement } from '../../projects/entities/improvement.entity';
+import { Project } from '../../projects/entities/project.entity';
+import { View } from '../../projects/entities/view.entity';
+import { MigrationInterface, QueryRunner } from 'typeorm';
+
+export class SeedProjectsData1733181270341 implements MigrationInterface {
+  public async up(queryRunner: QueryRunner): Promise<void> {
+    const projectRepository = queryRunner.manager.getRepository(Project);
+    const viewRepository = queryRunner.manager.getRepository(View);
+    const improvementRepository =
+      queryRunner.manager.getRepository(Improvement);
+
+    // Insert Projects
+    const projects = await projectRepository.save([
+      {
+        id: 'ecommerce-web-app',
+        category: 'react',
+        title: 'eCommerce web-app',
+        image: 'ecommerce-home.png',
+        skills: [
+          'React',
+          'TypeScript',
+          'Tailwind CSS',
+          'React Router',
+          'Context API',
+          'Responsive Design',
+        ],
+        details: [
+          'An eCommerce app built using React class components',
+          'Filtering products by category name (all, clothes, tech).',
+          'Ability to add/remove products and change their amounts in the cart.',
+          'Ability to change product attributes (color, capacity, size, etc.).',
+          'Selected options of added products are visible in both cart overlay and cart page.',
+          'Ability to switch between available currencies.',
+          'Currency and cart popovers close by clicking outside.',
+        ],
+        technologies: [
+          'React.js: Provides good user experience through Virtual DOM.',
+          'Redux Toolkit: Manages the state, preventing props drilling.',
+          'React Router DOM: Creates separate URLs for categories and products.',
+          'SCSS: Enhances styling capabilities.',
+          'GraphQL (Apollo): Fetches data from the API.',
+        ],
+      },
+      {
+        id: 'portfolio-website',
+        category: 'react',
+        title: 'Portfolio website',
+        image: 'portfolio-home.png',
+        skills: [
+          'React',
+          'TypeScript',
+          'SCSS',
+          'React Router',
+          'Responsive Design',
+        ],
+        details: [
+          'A portfolio website built using React functional components.',
+          'A responsive design that adapts to various screen sizes.',
+          'A clean and modern design that showcases my skills and experience.',
+          'A user-friendly interface that allows visitors to navigate easily.',
+        ],
+        technologies: [
+          'React.js: Provides good user experience through Virtual DOM.',
+          'SCSS: Enhances styling capabilities.',
+          'React Router DOM: Creates separate URLs for different sections of the website.',
+        ],
+      },
+      {
+        id: 'trello-clone',
+        category: 'react',
+        title: 'Trello Clone',
+        image: 'trello-clone.png',
+        skills: [
+          'React',
+          'TypeScript',
+          'SCSS',
+          'React Router',
+          'Drag and Drop',
+          'Responsive Design',
+        ],
+        details: [
+          'A Trello clone built using React functional components.',
+          'A responsive design that adapts to various screen sizes.',
+          'Drag-and-drop functionality for moving cards between lists.',
+          'A clean and modern design that mimics the look and feel of Trello.',
+        ],
+        technologies: [
+          'React.js: Provides good user experience through Virtual DOM.',
+          'SCSS: Enhances styling capabilities.',
+          'React Router DOM: Creates separate URLs for different sections of the website.',
+          'React Beautiful DnD: Implements drag-and-drop functionality.',
+        ],
+      },
+      {
+        id: 'marmak',
+        category: 'html',
+        title: 'MarMak Mechanika Samochodowa',
+        image: 'marmak-home.png',
+        skills: ['HTML', 'CSS', 'SCSS', 'Bootstrap', 'JavaScript'],
+        details: [
+          'A website for a car mechanic business built using HTML, CSS, and JavaScript.',
+          'A clean and professional design that showcases the services offered by the business.',
+          'A responsive design that adapts to various screen sizes.',
+          'A contact form that allows visitors to get in touch with the business.',
+        ],
+        technologies: [
+          'HTML: Provides the structure of the website.',
+          'CSS: Styles the website and makes it visually appealing.',
+          'Bootstrap: Provides pre-designed components for faster development.',
+          'JavaScript: Adds interactivity and functionality to the website.',
+        ],
+      },
+      {
+        id: 'butik',
+        category: 'html',
+        title: 'Butik Irena',
+        image: 'butik-home.png',
+        skills: ['HTML', 'CSS', 'SCSS', 'Bootstrap', 'JavaScript'],
+        details: [
+          'A website for a boutique business built using HTML, CSS, and JavaScript.',
+          'A clean and modern design that showcases the products offered by the business.',
+          'A responsive design that adapts to various screen sizes.',
+          'A contact form that allows visitors to get in touch with the business.',
+        ],
+        technologies: [
+          'HTML: Provides the structure of the website.',
+          'CSS: Styles the website and makes it visually appealing.',
+          'Bootstrap: Provides pre-designed components for faster development.',
+          'JavaScript: Adds interactivity and functionality to the website.',
+        ],
+      },
+      {
+        id: 'countrypedia',
+        category: 'html',
+        title: 'CountryPedia',
+        image: 'countrypedia-home.png',
+        skills: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
+        details: [
+          'A website that provides information about countries built using HTML, CSS, and JavaScript.',
+          'A clean and modern design that showcases the information about each country.',
+          'A responsive design that adapts to various screen sizes.',
+          'A search functionality that allows users to find specific countries.',
+        ],
+        technologies: [
+          'HTML: Provides the structure of the website.',
+          'CSS: Styles the website and makes it visually appealing.',
+          'Bootstrap: Provides pre-designed components for faster development.',
+          'JavaScript: Adds interactivity and functionality to the website.',
+        ],
+      },
+    ]);
+    const [
+      ecommerceWebApp,
+      portfolioWebsite,
+      trelloClone,
+      marmak,
+      butik,
+      countrypedia,
+    ] = projects;
+
+    await viewRepository.save([
+      // Views for eCommerce web app
+      {
+        title: 'Home',
+        image: 'ecommerce-home.png',
+        project: ecommerceWebApp,
+      },
+      {
+        title: 'Product Details',
+        image: 'ecommerce-product-details.png',
+        project: ecommerceWebApp,
+      },
+      {
+        title: 'Cart',
+        image: 'ecommerce-cart.png',
+        project: ecommerceWebApp,
+      },
+      {
+        title: 'Checkout',
+        image: 'ecommerce-checkout.png',
+        project: ecommerceWebApp,
+      },
+
+      // Views for Portfolio Website
+      {
+        title: 'Home',
+        image: 'portfolio-home.png',
+        project: portfolioWebsite,
+      },
+      {
+        title: 'About',
+        image: 'portfolio-about.png',
+        project: portfolioWebsite,
+      },
+      {
+        title: 'Experience',
+        image: 'portfolio-experience.png',
+        project: portfolioWebsite,
+      },
+      {
+        title: 'Projects',
+        image: 'portfolio-projects.png',
+        project: portfolioWebsite,
+      },
+      // Views for Trello Clone
+      {
+        title: 'Home',
+        image: 'trello-home.png',
+        project: trelloClone,
+      },
+
+      // Views for Marmak
+      {
+        title: 'Home',
+        image: 'marmak-home.png',
+        project: marmak,
+      },
+      {
+        title: 'Services',
+        image: 'marmak-services.png',
+        project: marmak,
+      },
+      {
+        title: 'Contact',
+        image: 'marmak-contact.png',
+        project: marmak,
+      },
+
+      // Views for Butik
+      {
+        title: 'Home',
+        image: 'butik-home.png',
+        project: butik,
+      },
+      {
+        title: 'Products',
+        image: 'butik-products.png',
+        project: butik,
+      },
+      {
+        title: 'Contact',
+        image: 'butik-contact.png',
+        project: butik,
+      },
+
+      // Views for Countrypedia
+      {
+        title: 'Home',
+        image: 'countrypedia-home.png',
+        project: countrypedia,
+      },
+      {
+        title: 'Country Details',
+        image: 'countrypedia-details.png',
+        project: countrypedia,
+      },
+    ]);
+
+    await improvementRepository.save([
+      {
+        improvement: 'TypeScript Migration',
+        description:
+          'GraphQL Codegen could generate reusable types for the frontend. TypeScript would reduce bugs and provide better autosuggestions.',
+        project: ecommerceWebApp,
+      },
+      {
+        improvement: 'Hooks Refactor',
+        description:
+          'Migrating from class components to hooks would simplify the codebase and keep it up-to-date with the latest React features.',
+        project: ecommerceWebApp,
+      },
+      {
+        improvement: 'Thumbnail Addition',
+        description:
+          'Adding product thumbnails in the API ensures the best-looking photo is displayed, improving the overall product presentation.',
+        project: ecommerceWebApp,
+      },
+    ]);
+
+    // Repeat similar structure for other projects (portfolio-website, trello-clone, etc.)
+  }
+
+  public async down(queryRunner: QueryRunner): Promise<void> {
+    const viewRepository = queryRunner.manager.getRepository(View);
+    const improvementRepository =
+      queryRunner.manager.getRepository(Improvement);
+    const projectRepository = queryRunner.manager.getRepository(Project);
+
+    // Delete Views and Improvements
+    await viewRepository.delete({});
+    await improvementRepository.delete({});
+    // Delete Projects
+    await projectRepository.delete({});
+  }
+}

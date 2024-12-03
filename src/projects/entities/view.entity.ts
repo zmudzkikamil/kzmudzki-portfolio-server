@@ -3,7 +3,7 @@ import { Project } from './project.entity';
 
 @Entity()
 export class View {
-  @PrimaryGeneratedColumn()
+  @PrimaryGeneratedColumn('uuid')
   id: string;
 
   @Column()
@@ -12,6 +12,6 @@ export class View {
   @Column()
   image: string;
 
-  @ManyToOne(() => Project, (project) => project.views)
+  @ManyToOne(() => Project, (project) => project.views, { onDelete: 'CASCADE' })
   project: Project;
 }

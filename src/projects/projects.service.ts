@@ -7,19 +7,21 @@ import { Project } from './entities/project.entity';
 export class ProjectsService {
   constructor(
     @InjectRepository(Project)
-    private readonly projectRepository: Repository<Project>,
+    private projectRepository: Repository<Project>,
   ) {}
 
-  findAll() {
+  // Simplified list of projects
+  async findAllSimplified(): Promise<Partial<Project>[]> {
     return this.projectRepository.find({
-      relations: ['views', 'improvements'],
+      select: ['id', 'category', 'title', 'image'], // Only fetch minimal fields
     });
   }
 
-  findOne(id: string) {
+  // Detailed project view by ID
+  async findDetailedById(id: string): Promise<Project> {
     return this.projectRepository.findOne({
       where: { id },
-      relations: ['views', 'improvements'],
+      relations: ['views', 'improvements'], // Include related entities
     });
   }
 }
