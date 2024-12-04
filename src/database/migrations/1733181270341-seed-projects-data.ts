@@ -276,6 +276,89 @@ export class SeedProjectsData1733181270341 implements MigrationInterface {
           'Adding product thumbnails in the API ensures the best-looking photo is displayed, improving the overall product presentation.',
         project: ecommerceWebApp,
       },
+      {
+        improvement: 'UX Improvements',
+        descriptionDetails: [
+          'Ability to change attributes in cart popover.',
+          'Clickable logo to redirect to the all categories listing page.',
+          'Skeleton loaders instead of spinners for a smoother UX.',
+          'Toast messages for cart updates (add/increase/decrease).',
+          'Display tax in the cart popover, not only in the cart page.',
+        ],
+        project: ecommerceWebApp,
+      },
+      {
+        improvement: 'Dark Mode',
+        description:
+          'Adding a dark mode feature would provide users with an alternative color scheme that is easier on the eyes, especially in low-light environments.',
+        project: portfolioWebsite,
+      },
+      {
+        improvement: 'Contact Form',
+        description:
+          'Implementing a contact form would allow visitors to get in touch with me directly through the website, making it easier to connect.',
+        project: portfolioWebsite,
+      },
+      {
+        improvement: 'Animations',
+        description:
+          'Adding subtle animations to the website would enhance the user experience and make the site more engaging.',
+        project: portfolioWebsite,
+      },
+      {
+        improvement: 'SEO Optimization',
+        description:
+          'Optimizing the website for search engines would improve its visibility and help attract more visitors.',
+        project: portfolioWebsite,
+      },
+      {
+        improvement: 'User Authentication',
+        description:
+          'Adding user authentication would allow users to create accounts, log in, and save their boards and cards.',
+        project: trelloClone,
+      },
+      {
+        improvement: 'Real-Time Updates',
+        description:
+          'Implementing real-time updates would allow users to see changes made by other users in real time, similar to the actual Trello app.',
+        project: trelloClone,
+      },
+      {
+        improvement: 'SEO Optimization',
+        description:
+          'Optimizing the website for search engines would improve its visibility and help attract more visitors.',
+        project: marmak,
+      },
+      {
+        improvement: 'Performance Optimization',
+        description:
+          'Improving the performance of the website would reduce load times and provide a better user experience.',
+        project: marmak,
+      },
+      {
+        improvement: 'SEO Optimization',
+        description:
+          'Optimizing the website for search engines would improve its visibility and help attract more visitors.',
+        project: butik,
+      },
+      {
+        improvement: 'Performance Optimization',
+        description:
+          'Improving the performance of the website would reduce load times and provide a better user experience.',
+        project: butik,
+      },
+      {
+        improvement: 'API Integration',
+        description:
+          'Integrating a RESTful API would allow the website to fetch real-time data about countries, such as population, area, and currency.',
+        project: countrypedia,
+      },
+      {
+        improvement: 'Dynamic Search',
+        description:
+          'Implementing a dynamic search functionality would allow users to search for countries as they type, providing instant results.',
+        project: countrypedia,
+      },
     ]);
 
     // Repeat similar structure for other projects (portfolio-website, trello-clone, etc.)

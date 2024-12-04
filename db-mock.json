@@ -240,7 +240,7 @@
       },
       {
         "improvement": "UX Improvements",
-        "description-details": [
+        "descriptionDetails": [
           "Ability to change attributes in cart popover.",
           "Clickable logo to redirect to the all categories listing page.",
           "Skeleton loaders instead of spinners for a smoother UX.",
