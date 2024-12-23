@@ -6,6 +6,7 @@ import { Position } from './experience/position.entity';
 import { Project } from './projects/entities/project.entity';
 import { View } from './projects/entities/view.entity';
 import { Improvement } from './projects/entities/improvement.entity';
+import { Cert } from './certs/certs.entity';
 
 export const AppDataSource = new DataSource({
   type: 'sqlite', // or 'mysql', 'postgres', etc.
@@ -18,6 +19,7 @@ export const AppDataSource = new DataSource({
     Project,
     View,
     Improvement,
+    Cert,
   ], // Your entities
   migrations: ['./src/database/migrations/*.ts'], // Migration files location
   synchronize: false, // Don't automatically sync schema in production

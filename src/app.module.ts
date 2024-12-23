@@ -9,8 +9,10 @@ import { Experience } from './experience/experience.entity';
 import { Knowledge } from './knowledge/knowledge.entity';
 import { ProjectsModule } from './projects/projects.module';
 import { Project } from './projects/entities/project.entity';
+import { Cert } from './certs/certs.entity';
 import { View } from './projects/entities/view.entity';
 import { Improvement } from './projects/entities/improvement.entity';
+import { CertsModule } from './certs/certs.module';
 
 @Module({
   imports: [
@@ -25,6 +27,7 @@ import { Improvement } from './projects/entities/improvement.entity';
         Project,
         View,
         Improvement,
+        Cert,
       ], // Your entities
       synchronize: true, // Synchronizes schema; disable in production!
     }),
@@ -32,6 +35,7 @@ import { Improvement } from './projects/entities/improvement.entity';
     ExperienceModule,
     KnowledgeModule,
     ProjectsModule,
+    CertsModule,
   ],
 })
 export class AppModule {}
