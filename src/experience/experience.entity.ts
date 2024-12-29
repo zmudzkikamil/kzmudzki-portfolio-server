@@ -9,6 +9,9 @@ export class Experience {
   @Column()
   company: string;
 
+  @Column()
+  period: string;
+
   @OneToMany(() => Position, (position) => position.experience, {
     cascade: true,
   })

@@ -20,7 +20,7 @@ export class SeedAboutMeData1732994156294 implements MigrationInterface {
         title: 'First commercial website as freelancer',
         description:
           'My first commercial project was a simple website I built for a family member who runs a car mechanic business. I took on the challenge of creating a functional and visually appealing website using HTML, CSS/SCSS, and JavaScript.',
-        icon: 'fa-solid fa-wrench',
+        icon: 'fa-solid fa-screwdriver-wrench',
       },
       {
         id: '3',
