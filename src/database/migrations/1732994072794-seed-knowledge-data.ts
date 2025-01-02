@@ -47,12 +47,7 @@ export class SeedKnowledgeData1732994072794 implements MigrationInterface {
       {
         category: 'other',
         level: '70%',
-        skills: [
-          'Git',
-          'Agile/Scrum',
-          'Webpack',
-          'AWS Certified Developer - Associate',
-        ],
+        skills: ['Git', 'Agile/Scrum', 'Webpack', 'AWS Cloud Services'],
       },
     ]);
   }
