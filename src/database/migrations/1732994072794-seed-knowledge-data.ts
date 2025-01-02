@@ -9,8 +9,8 @@ export class SeedKnowledgeData1732994072794 implements MigrationInterface {
     await knowledgeRepository.insert([
       {
         category: 'basics',
-        level: '80%',
-        skills: ['HTML', 'CSS', 'JavaScript', 'TypeScript'], // skills should be an array
+        level: '85%',
+        skills: ['HTML', 'CSS', 'JavaScript', 'TypeScript'],
       },
       {
         category: 'react',
@@ -28,6 +28,21 @@ export class SeedKnowledgeData1732994072794 implements MigrationInterface {
         category: 'styling',
         level: '75%',
         skills: ['SCSS', 'Tailwind CSS', 'Styled Components', 'CSS Modules'],
+      },
+      {
+        category: 'testing',
+        level: '70%',
+        skills: [
+          'Jest',
+          'React Testing Library',
+          'Cypress',
+          'End-to-End Testing',
+        ],
+      },
+      {
+        category: 'backend',
+        level: '60%',
+        skills: ['Node.js', 'Nest.js', 'SQL', 'SQLite', 'postgreSQL'],
       },
     ]);
   }
