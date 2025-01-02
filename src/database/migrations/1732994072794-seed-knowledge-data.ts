@@ -44,6 +44,16 @@ export class SeedKnowledgeData1732994072794 implements MigrationInterface {
         level: '60%',
         skills: ['Node.js', 'Nest.js', 'SQL', 'SQLite', 'postgreSQL'],
       },
+      {
+        category: 'other',
+        level: '70%',
+        skills: [
+          'Git',
+          'Agile/Scrum',
+          'Webpack',
+          'AWS Certified Developer - Associate',
+        ],
+      },
     ]);
   }
 
