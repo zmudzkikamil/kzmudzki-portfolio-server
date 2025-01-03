@@ -14,6 +14,9 @@ export class Cert {
   @Column()
   dateIssued: number;
 
+  @Column()
+  icon: string;
+
   @Column({ nullable: true })
   expirationDate?: number;
 }

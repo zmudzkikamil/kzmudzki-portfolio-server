@@ -11,13 +11,15 @@ export class SeedCertsData1734955166995 implements MigrationInterface {
         description:
           'Validates ability to develop and maintain applications on AWS.',
         dateIssued: 1719811200000,
-        expirationDate: 1741344000000,
+        icon: 'fa-brands fa-aws',
+        expirationDate: 1814400000000,
       },
       {
         name: 'Engineer Diploma - Lodz University of Technology',
         description:
           'Degree in Faculty of Electrical, Electronic, Computer and Control Engineering.',
         dateIssued: 1612137600000,
+        icon: 'fa-solid fa-user-graduate',
       },
     ]);
   }
