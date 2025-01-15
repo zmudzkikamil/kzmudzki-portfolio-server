@@ -2,7 +2,7 @@
 
 # <p align="center">Kamil Żmudzki</p2>
 
-<p align="center"><em>Portfolio App and Digital CV - TypeScript, Nest.js, sqlite</em><br>
+<p align="center"><em>Portfolio App and Digital CV - TypeScript, Nest.js, sqlite postgresql, typeORM </em><br>
   
  ## Project Status
 
