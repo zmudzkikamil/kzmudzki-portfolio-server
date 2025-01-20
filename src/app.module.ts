@@ -28,7 +28,7 @@ import { CertsModule } from './certs/certs.module';
         View,
         Improvement,
         Cert,
-      ], // Your entities
+      ],
       synchronize: true, // Synchronizes schema; disable in production!
     }),
     AboutMeModule,
