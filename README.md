@@ -1,16 +1,24 @@
-# <p align="center">Portfolio App - API Side</p1>
+# <p align="center">Portfolio App - API Side 2024/2025</p1>
 
 # <p align="center">Kamil Żmudzki</p2>
 
-<p align="center"><em>Portfolio App and Digital CV - TypeScript, Nest.js, sqlite</em><br>
+<p align="center"><em>Portfolio App and Digital CV - TypeScript, Nest.js, sqlite postgresql, typeORM </em><br>
   
  ## Project Status
 
 🚧 **Under Construction** 🚧
 
-This project is currently a work in progress and not yet in its final form. Many
-features are incomplete or subject to change. Contributions, suggestions, and
-feedback are highly appreciated!
+I chose NestJS for this small application because:
+
+**Learning opportunity** I wanted to explore NestJS and its unique, modular structure.
+
+**TypeScript-first approach** NestJS enforces TypeScript, aligning with modern development standards.
+
+**Scalable design** Although this project is small, NestJS provides a strong foundation for scalability and maintainability, which is valuable for future projects.
+
+This project allowed me to gain hands-on experience with a framework often used in larger, commercial applications.
+
+
 
 **UI/UX FIGMA Concept** Here are some of the initial UI/UX design concepts from
 Figma. These mockups are part of the planning phase and serve as a starting
