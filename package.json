@@ -18,6 +18,9 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
+    "seed": "ts-node -r tsconfig-paths/register src/database/seeds/run-seeds.ts",
+    "seed:clear": "ts-node -r tsconfig-paths/register src/database/seeds/clear-database.ts",
+    "seed:refresh": "npm run seed:clear && npm run seed",
     "migration:create": "typeorm migration:create ./src/database/migrations/seed-about-me-data",
     "migration:generate": "npx typeorm-ts-node-commonjs migration:generate ./src/database/migrations/seed-initial-data -d ./src/data-source.ts",
     "migration:show": "npx typeorm-ts-node-commonjs migration:show -d ./src/database/data-source.ts",
@@ -30,9 +33,9 @@
     "@nestjs/platform-express": "^10.0.0",
     "@nestjs/swagger": "^8.1.0",
     "@nestjs/typeorm": "^10.0.2",
+    "better-sqlite3": "^11.8.1",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1",
-    "sqlite3": "^5.1.7",
     "typeorm": "^0.3.20"
   },
   "devDependencies": {

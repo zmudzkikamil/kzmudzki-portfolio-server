@@ -17,7 +17,7 @@ import { CertsModule } from './certs/certs.module';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
-      type: 'sqlite',
+      type: 'better-sqlite3',
       database: 'database.sqlite',
       entities: [
         AboutMe,
@@ -29,7 +29,12 @@ import { CertsModule } from './certs/certs.module';
         Improvement,
         Cert,
       ],
-      synchronize: true, // Synchronizes schema; disable in production!
+      // synchronize: true creates/updates tables automatically based on entities
+      // This is fine for development but MUST BE FALSE in production
+      // For production: use migrations instead (migration:generate, migration:run)
+      synchronize: true,
+      // Enable logging to see SQL queries during development
+      logging: process.env.NODE_ENV === 'development',
     }),
     AboutMeModule,
     ExperienceModule,

@@ -10,12 +10,10 @@ export class SeedExperienceData1732994102083 implements MigrationInterface {
     // Insert Experiences
     const experiences = await experienceRepository.save([
       {
-        id: '1',
         company: 'Fujitsu Technology Solutions',
         period: '10/2022 - present',
       },
       {
-        id: '2',
         company: 'Freelancer Web Development',
         period: '10/2021 - 10/2022',
       },

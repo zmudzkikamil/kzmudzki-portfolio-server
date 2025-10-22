@@ -4,7 +4,7 @@ import { Experience } from './experience.entity';
 @Entity()
 export class Position {
   @PrimaryGeneratedColumn()
-  id: string;
+  id: number;
 
   @Column()
   title: string;

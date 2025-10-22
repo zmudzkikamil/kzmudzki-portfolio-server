@@ -16,7 +16,7 @@ export class KnowledgeService {
   }
 
   // Fetch a single knowledge entry by ID
-  async findOne(id: string): Promise<Knowledge> {
+  async findOne(id: number): Promise<Knowledge> {
     return await this.knowledgeRepository.findOneBy({ id });
   }
 }

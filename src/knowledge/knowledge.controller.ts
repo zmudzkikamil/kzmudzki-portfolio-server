@@ -15,7 +15,7 @@ export class KnowledgeController {
   // Endpoint to fetch a specific knowledge entry by ID
   @Get(':id')
   async getKnowledgeById(
-    @Param('id', ParseIntPipe) id: string,
+    @Param('id', ParseIntPipe) id: number,
   ): Promise<Knowledge> {
     return await this.knowledgeService.findOne(id);
   }

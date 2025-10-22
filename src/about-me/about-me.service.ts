@@ -14,7 +14,7 @@ export class AboutMeService {
     return this.aboutMeRepository.find();
   }
 
-  findOne(id: string) {
+  findOne(id: number) {
     return this.aboutMeRepository.findOne({ where: { id } });
   }
 }

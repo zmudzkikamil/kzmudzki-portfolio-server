@@ -7,7 +7,6 @@ export class SeedAboutMeData1732994156294 implements MigrationInterface {
 
     await aboutMeRepository.insert([
       {
-        id: '1',
         year: 2021,
         title: 'Łódź University of Technology',
         description:
@@ -15,7 +14,6 @@ export class SeedAboutMeData1732994156294 implements MigrationInterface {
         icon: 'fa-solid fa-graduation-cap',
       },
       {
-        id: '2',
         year: 2022,
         title: 'First commercial website as freelancer',
         description:
@@ -23,7 +21,6 @@ export class SeedAboutMeData1732994156294 implements MigrationInterface {
         icon: 'fa-solid fa-screwdriver-wrench',
       },
       {
-        id: '3',
         year: 2022,
         title: 'First software developer job',
         description:
@@ -31,7 +28,6 @@ export class SeedAboutMeData1732994156294 implements MigrationInterface {
         icon: 'fa-solid fa-laptop-code',
       },
       {
-        id: '4',
         year: 2024,
         title: 'AWS Certified Associate Developer',
         description:

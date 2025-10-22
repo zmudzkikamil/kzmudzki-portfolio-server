@@ -14,7 +14,7 @@ export class ExperienceService {
     return this.experienceRepository.find({ relations: ['positions'] });
   }
 
-  findOne(id: string) {
+  findOne(id: number) {
     return this.experienceRepository.findOne({
       where: { id },
       relations: ['positions'],

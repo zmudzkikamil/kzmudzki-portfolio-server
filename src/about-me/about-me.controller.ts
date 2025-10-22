@@ -12,6 +12,6 @@ export class AboutMeController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.aboutMeService.findOne(id);
+    return this.aboutMeService.findOne(+id); // Convert string param to number
   }
 }

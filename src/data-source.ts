@@ -9,7 +9,7 @@ import { Improvement } from './projects/entities/improvement.entity';
 import { Cert } from './certs/certs.entity';
 
 export const AppDataSource = new DataSource({
-  type: 'sqlite', // or 'mysql', 'postgres', etc.
+  type: 'better-sqlite3', // or 'mysql', 'postgres', etc.
   database: 'database.sqlite',
   entities: [
     AboutMe,
@@ -22,6 +22,6 @@ export const AppDataSource = new DataSource({
     Cert,
   ], // Your entities
   migrations: ['./src/database/migrations/*.ts'], // Migration files location
-  synchronize: false, // Don't automatically sync schema in production
+  synchronize: true, // Auto-create tables (for development/seeding)
   logging: true,
 });

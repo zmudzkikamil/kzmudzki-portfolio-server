@@ -15,7 +15,7 @@ export class ExperienceController {
   // Get a single Experience item by id
   @Get(':id')
   async findOne(@Param('id') id: string): Promise<Experience> {
-    const experienceItem = await this.experienceService.findOne(id);
+    const experienceItem = await this.experienceService.findOne(+id); // Convert string param to number
     if (!experienceItem) {
       throw new NotFoundException(`Experience item with ID ${id} not found`);
     }
