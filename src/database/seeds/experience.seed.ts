@@ -18,8 +18,12 @@ export async function seedExperience(dataSource: DataSource): Promise<void> {
   // Insert Experiences (without hardcoded IDs)
   const experiences = await experienceRepository.save([
     {
+      company: 'Deloitte',
+      period: '03/2025 - present',
+    },
+    {
       company: 'Fujitsu Technology Solutions',
-      period: '10/2022 - present',
+      period: '10/2022 - 03/2025',
     },
     {
       company: 'Freelancer Web Development',
@@ -27,8 +31,19 @@ export async function seedExperience(dataSource: DataSource): Promise<void> {
     },
   ]);
 
-  const [fujitsu, freelancer] = experiences;
+  const [deloitte, fujitsu, freelancer] = experiences;
 
+  // Insert Positions for Deloitte
+  await positionRepository.save([
+    {
+      title: 'Consultant | Software Developer',
+      period: '2025/03-present',
+      description:
+        'As a Software Developer at Deloitte, I am involved in various projects that enhance my skills in software development. I collaborate with cross-functional teams to deliver high-quality solutions that meet client needs. My role includes coding, testing, and participating in code reviews to ensure best practices are followed.',
+      skills: ['React', 'TypeScript', 'Node.js', 'Agile', 'Scrum'],
+      experience: deloitte,
+    },
+  ]);
   // Insert Positions for Fujitsu
   await positionRepository.save([
     {
