@@ -23,7 +23,8 @@ export async function seedProjects(dataSource: DataSource): Promise<void> {
       id: 'ecommerce-web-app',
       category: 'react',
       title: 'eCommerce web-app',
-      image: 'ecommerce-home.png',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1767994952/ecommerce-home_a6y1rh.png',
       skills: [
         'React',
         'TypeScript',
@@ -53,7 +54,8 @@ export async function seedProjects(dataSource: DataSource): Promise<void> {
       id: 'portfolio-website',
       category: 'react',
       title: 'Portfolio website',
-      image: 'portfolio-home.png',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1769372587/thumbnail-portfolio_u7mrmf.png',
       skills: [
         'React',
         'TypeScript',
@@ -77,7 +79,8 @@ export async function seedProjects(dataSource: DataSource): Promise<void> {
       id: 'trello-clone',
       category: 'react',
       title: 'Trello Clone',
-      image: 'trello-clone.png',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1767994963/trello-home_p1j5a7.png',
       skills: [
         'React',
         'TypeScript',
@@ -102,8 +105,9 @@ export async function seedProjects(dataSource: DataSource): Promise<void> {
     {
       id: 'marmak',
       category: 'html',
-      title: 'MarMak Mechanika Samochodowa',
-      image: 'marmak-home.png',
+      title: 'MarMak Mechanika',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1767994957/marmak-home_ibqgmw.png',
       skills: ['HTML', 'CSS', 'SCSS', 'Bootstrap', 'JavaScript'],
       details: [
         'A website for a car mechanic business built using HTML, CSS, and JavaScript.',
@@ -122,7 +126,8 @@ export async function seedProjects(dataSource: DataSource): Promise<void> {
       id: 'butik',
       category: 'html',
       title: 'Butik Irena',
-      image: 'butik-home.png',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1767994915/butik-home_vm9vdy.png',
       skills: ['HTML', 'CSS', 'SCSS', 'Bootstrap', 'JavaScript'],
       details: [
         'A website for a boutique business built using HTML, CSS, and JavaScript.',
@@ -141,7 +146,8 @@ export async function seedProjects(dataSource: DataSource): Promise<void> {
       id: 'countrypedia',
       category: 'html',
       title: 'CountryPedia',
-      image: 'countrypedia-home.png',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1767994950/countrypedia-home_weyfdt.png',
       skills: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
       details: [
         'A website that provides information about countries built using HTML, CSS, and JavaScript.',
@@ -172,97 +178,138 @@ export async function seedProjects(dataSource: DataSource): Promise<void> {
     // Views for eCommerce web app
     {
       title: 'Home',
-      image: 'ecommerce-home.png',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1767994952/ecommerce-home_a6y1rh.png',
       project: ecommerceWebApp,
     },
     {
       title: 'Product Details',
-      image: 'ecommerce-product-details.png',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1767994955/ecommerce-product_yhcasg.png',
       project: ecommerceWebApp,
     },
     {
       title: 'Cart',
-      image: 'ecommerce-cart.png',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1767994954/ecommerce-popover_n2wheg.png',
       project: ecommerceWebApp,
     },
     {
       title: 'Checkout',
-      image: 'ecommerce-checkout.png',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1767994952/ecommerce-cart_dr20mk.png',
       project: ecommerceWebApp,
     },
 
     // Views for Portfolio Website
     {
       title: 'Home',
-      image: 'portfolio-home.png',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1769372587/thumbnail-portfolio_u7mrmf.png',
       project: portfolioWebsite,
     },
     {
       title: 'About',
-      image: 'portfolio-about.png',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1769373429/portfolio-about_rrwqkx.png',
       project: portfolioWebsite,
     },
     {
       title: 'Experience',
-      image: 'portfolio-experience.png',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1769374652/portfolio-experience_fomkd4.png',
       project: portfolioWebsite,
     },
     {
       title: 'Projects',
-      image: 'portfolio-projects.png',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1769374639/portfolio-projects_zz3oln.png',
       project: portfolioWebsite,
     },
 
     // Views for Trello Clone
     {
       title: 'Home',
-      image: 'trello-home.png',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1767994963/trello-home_p1j5a7.png',
       project: trelloClone,
     },
 
     // Views for Marmak
     {
       title: 'Home',
-      image: 'marmak-home.png',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1767994957/marmak-home_ibqgmw.png',
       project: marmak,
     },
     {
       title: 'Services',
-      image: 'marmak-services.png',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1767994959/marmak-offer_ngcfrr.png',
       project: marmak,
     },
     {
-      title: 'Contact',
-      image: 'marmak-contact.png',
+      title: 'Location',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1767994958/marmak-location_ak5z27.png',
+      project: marmak,
+    },
+    {
+      title: 'Pricing',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1767994961/marmak-prices_notm4y.png',
+      project: marmak,
+    },
+    {
+      title: 'Gallery',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1767994956/marmak-gallery_mri2vs.png',
       project: marmak,
     },
 
     // Views for Butik
     {
       title: 'Home',
-      image: 'butik-home.png',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1767994915/butik-home_vm9vdy.png',
       project: butik,
     },
     {
       title: 'Products',
-      image: 'butik-products.png',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1767994913/butik-categories_vuqyyt.png',
+      project: butik,
+    },
+    {
+      title: 'Pricing',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1767994916/butik-offer_qauds8.png',
+      project: butik,
+    },
+    {
+      title: 'Newsletter',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1767994914/butik-location_rgou5m.png',
       project: butik,
     },
     {
       title: 'Contact',
-      image: 'butik-contact.png',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1767994914/butik-contact_wpp6cy.png',
       project: butik,
     },
 
     // Views for Countrypedia
     {
       title: 'Home',
-      image: 'countrypedia-home.png',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1767994950/countrypedia-home_weyfdt.png',
       project: countrypedia,
     },
     {
       title: 'Country Details',
-      image: 'countrypedia-details.png',
+      image:
+        'https://res.cloudinary.com/dwwjjyizc/image/upload/v1767994949/countrypedia-form_geng5s.png',
       project: countrypedia,
     },
   ]);
