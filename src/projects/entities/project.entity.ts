@@ -42,7 +42,7 @@ export class Project {
     description: 'Details about the project',
     nullable: true,
   })
-  @Column('simple-array', { nullable: true })
+  @Column('simple-json', { nullable: true })
   details?: string[];
 
   @ApiProperty({
@@ -50,7 +50,7 @@ export class Project {
     description: 'Technologies used in the project',
     nullable: true,
   })
-  @Column('simple-array', { nullable: true })
+  @Column('simple-json', { nullable: true })
   technologies?: string[];
 
   @ApiProperty({ description: 'List of views related to the project' })
