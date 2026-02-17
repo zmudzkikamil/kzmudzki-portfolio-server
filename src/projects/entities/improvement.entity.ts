@@ -12,7 +12,7 @@ export class Improvement {
   @Column({ nullable: true })
   description?: string;
 
-  @Column('simple-array', { nullable: true }) // Optional array of detailed descriptions
+  @Column('simple-json', { nullable: true }) // Optional array of detailed descriptions
   descriptionDetails?: string[];
 
   @ManyToOne(() => Project, (project) => project.improvements, {
