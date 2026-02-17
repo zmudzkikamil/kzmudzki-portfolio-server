@@ -1,4 +1,5 @@
 import { Module } from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AboutMeModule } from './about-me/about-me.module';
 import { ExperienceModule } from './experience/experience.module';
@@ -13,9 +14,12 @@ import { Cert } from './certs/certs.entity';
 import { View } from './projects/entities/view.entity';
 import { Improvement } from './projects/entities/improvement.entity';
 import { CertsModule } from './certs/certs.module';
+import { ContactModule } from './contact/contact.module';
+import { ContactSubmission } from './contact/contact.entity';
 
 @Module({
   imports: [
+    ConfigModule.forRoot({ isGlobal: true }),
     TypeOrmModule.forRoot({
       type: 'better-sqlite3',
       database: 'database.sqlite',
@@ -28,6 +32,7 @@ import { CertsModule } from './certs/certs.module';
         View,
         Improvement,
         Cert,
+        ContactSubmission,
       ],
       // synchronize: true creates/updates tables automatically based on entities
       // This is fine for development but MUST BE FALSE in production
@@ -41,6 +46,7 @@ import { CertsModule } from './certs/certs.module';
     KnowledgeModule,
     ProjectsModule,
     CertsModule,
+    ContactModule,
   ],
 })
 export class AppModule {}
