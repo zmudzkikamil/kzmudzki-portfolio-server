@@ -19,7 +19,7 @@ import { ContactSubmission } from './contact/contact.entity';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({ isGlobal: true }),
+    ConfigModule.forRoot({ isGlobal: true, envFilePath: '.env' }),
     TypeOrmModule.forRoot({
       type: 'better-sqlite3',
       database: 'database.sqlite',
