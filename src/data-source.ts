@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { DataSource } from 'typeorm';
 import { Experience } from './experience/experience.entity';
 import { Knowledge } from './knowledge/knowledge.entity';
@@ -7,10 +8,12 @@ import { Project } from './projects/entities/project.entity';
 import { View } from './projects/entities/view.entity';
 import { Improvement } from './projects/entities/improvement.entity';
 import { Cert } from './certs/certs.entity';
+import { ContactSubmission } from './contact/contact.entity';
 
 export const AppDataSource = new DataSource({
-  type: 'better-sqlite3',
-  database: 'database.sqlite',
+  type: 'postgres',
+  url: process.env.DATABASE_URL,
+  ssl: { rejectUnauthorized: false },
   entities: [
     AboutMe,
     Position,
@@ -20,6 +23,8 @@ export const AppDataSource = new DataSource({
     View,
     Improvement,
     Cert,
+    ContactSubmission,
   ],
+  migrations: ['src/database/migrations/*.ts'],
   logging: true,
 });

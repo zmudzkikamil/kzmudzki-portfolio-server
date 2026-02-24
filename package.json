@@ -20,7 +20,11 @@
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "seed": "ts-node -r tsconfig-paths/register src/database/seeds/run-seeds.ts",
     "seed:clear": "ts-node -r tsconfig-paths/register src/database/seeds/clear-database.ts",
-    "seed:refresh": "npm run seed:clear && npm run seed"
+    "seed:refresh": "npm run seed:clear && npm run seed",
+    "migration:generate": "typeorm-ts-node-commonjs migration:generate -d src/data-source.ts",
+    "migration:run": "typeorm-ts-node-commonjs migration:run -d src/data-source.ts",
+    "migration:revert": "typeorm-ts-node-commonjs migration:revert -d src/data-source.ts",
+    "migration:show": "typeorm-ts-node-commonjs migration:show -d src/data-source.ts"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
@@ -29,9 +33,10 @@
     "@nestjs/platform-express": "^10.0.0",
     "@nestjs/swagger": "^8.1.0",
     "@nestjs/typeorm": "^10.0.2",
-    "better-sqlite3": "^11.8.1",
+    "@types/pg": "^8.16.0",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.3",
+    "pg": "^8.18.0",
     "reflect-metadata": "^0.2.0",
     "resend": "^6.9.2",
     "rxjs": "^7.8.1",

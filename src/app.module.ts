@@ -21,8 +21,9 @@ import { ContactSubmission } from './contact/contact.entity';
   imports: [
     ConfigModule.forRoot({ isGlobal: true, envFilePath: '.env' }),
     TypeOrmModule.forRoot({
-      type: 'better-sqlite3',
-      database: 'database.sqlite',
+      type: 'postgres',
+      url: process.env.DATABASE_URL,
+      ssl: { rejectUnauthorized: false },
       entities: [
         AboutMe,
         Position,
@@ -34,12 +35,10 @@ import { ContactSubmission } from './contact/contact.entity';
         Cert,
         ContactSubmission,
       ],
-      // synchronize: true creates/updates tables automatically based on entities
-      // This is fine for development but MUST BE FALSE in production
-      // For production: use migrations instead (migration:generate, migration:run)
-      synchronize: true,
-      // Enable logging to see SQL queries during development
-      logging: process.env.NODE_ENV === 'development',
+      synchronize: false,
+      migrations: ['dist/database/migrations/*.js'],
+      migrationsRun: true,
+      logging: process.env.NODE_ENV !== 'production',
     }),
     AboutMeModule,
     ExperienceModule,

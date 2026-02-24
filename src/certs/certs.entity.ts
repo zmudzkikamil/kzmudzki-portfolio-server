@@ -11,12 +11,12 @@ export class Cert {
   @Column()
   description: string;
 
-  @Column()
-  dateIssued: number;
+  @Column({ type: 'timestamptz' })
+  dateIssued: Date;
 
   @Column()
   icon: string;
 
-  @Column({ nullable: true })
-  expirationDate?: number;
+  @Column({ type: 'timestamptz', nullable: true })
+  expirationDate?: Date;
 }
