@@ -39,8 +39,17 @@ export async function seedExperience(dataSource: DataSource): Promise<void> {
       title: 'Consultant | Software Developer',
       period: '2025/03-present',
       description:
-        'As a Software Developer at Deloitte, I am involved in various projects that enhance my skills in software development. I collaborate with cross-functional teams to deliver high-quality solutions that meet client needs. My role includes coding, testing, and participating in code reviews to ensure best practices are followed.',
-      skills: ['React', 'TypeScript', 'Node.js', 'Agile', 'Scrum'],
+        'I was part of an international team delivering a large-scale e-commerce platform for a Fortune 500 client focused on selling IT and AI products and services for admins and partners. Worked closely with US-based colleagues across UX/UI, content, SEO, analytics and business teams in a fully English-speaking environment, contributing to frontend development in React on a customized AppDirect-based marketplace platform.',
+      skills: [
+        'React',
+        'TypeScript',
+        'Node.js',
+        'Scrum',
+        'PandaCSS',
+        'Tailwind',
+        'SCSS',
+        'AppDirect',
+      ],
       experience: deloitte,
     },
   ]);

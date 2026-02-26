@@ -34,7 +34,13 @@ export async function seedKnowledge(dataSource: DataSource): Promise<void> {
     {
       category: 'styling',
       level: '75%',
-      skills: ['SCSS', 'Tailwind CSS', 'Styled Components', 'CSS Modules'],
+      skills: [
+        'SCSS',
+        'Tailwind CSS',
+        'Styled Components',
+        'CSS Modules',
+        'pandaCSS',
+      ],
     },
     {
       category: 'testing',
@@ -48,7 +54,7 @@ export async function seedKnowledge(dataSource: DataSource): Promise<void> {
     },
     {
       category: 'backend',
-      level: '60%',
+      level: '55%',
       skills: ['Node.js', 'Nest.js', 'SQL', 'SQLite', 'postgreSQL'],
     },
     {
