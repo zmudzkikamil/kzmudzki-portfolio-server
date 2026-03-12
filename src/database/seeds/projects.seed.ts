@@ -59,14 +59,15 @@ export async function seedProjects(dataSource: DataSource): Promise<void> {
       skills: [
         'React',
         'TypeScript',
-        'SCSS',
+        'TailwindCSS',
         'React Router',
         'Responsive Design',
+        'Figma',
       ],
       details: [
         'A portfolio website built using React functional components.',
         'A responsive design that adapts to various screen sizes.',
-        'A clean and modern design that showcases my skills and experience.',
+        'Design that showcases my skills and experience.',
         'A user-friendly interface that allows visitors to navigate easily.',
       ],
       technologies: [
