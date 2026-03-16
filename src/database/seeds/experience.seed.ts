@@ -37,9 +37,9 @@ export async function seedExperience(dataSource: DataSource): Promise<void> {
   await positionRepository.save([
     {
       title: 'Consultant | Software Developer',
-      period: '2025/03-present',
+      period: '2025/03 - present',
       description:
-        'I was part of an international team delivering a large-scale e-commerce platform for a Fortune 500 client focused on selling IT and AI products and services for admins and partners. Worked closely with US-based colleagues across UX/UI, content, SEO, analytics and business teams in a fully English-speaking environment, contributing to frontend development in React on a customized AppDirect-based marketplace platform.',
+        'I was part of an international team delivering a large-scale e-commerce platform for a Fortune 500 client focused on selling IT and AI products and services for admins and partners. Worked closely with US-based colleagues across UX/UI, content, SEO, analytics and business teams in a fully English-speaking environment, contributing to frontend development in React on a customized AppDirect-based marketplace platform.\n\nI also contributed to a very large-scale sports project, where I developed advanced UI components including data tables, timelines, and live sports event tracking features, delivering real-time experiences to a broad audience.',
       skills: [
         'React',
         'TypeScript',
@@ -57,7 +57,7 @@ export async function seedExperience(dataSource: DataSource): Promise<void> {
   await positionRepository.save([
     {
       title: 'Software Developer',
-      period: '2024/05-present',
+      period: '2024/05 - 2025/03',
       description:
         "I have made a substantial impact on the architecture of a large-scale application, helping to shape the software's development in this role. I've worked in a fully integrated team setup, collaborating with scrum masters, QA specialists, developers, product owners, and designers. Our project serves a diverse user base, from young students to educators, and meets WCAG 2.1 AA Accessibility standards. Maintaining responsiveness and compatibility across all devices and platforms, the application is set for ongoing evolution and long-term success.",
       skills: ['React', 'TypeScript', 'WCAG 2.1 AA', 'AWS', 'Azure', 'PWA'],
@@ -65,7 +65,7 @@ export async function seedExperience(dataSource: DataSource): Promise<void> {
     },
     {
       title: 'Associate Software Developer',
-      period: '2023/04-2024/04',
+      period: '2023/04 - 2024/04',
       description:
         'While working as an Assistant, I transitioned into a frontend role on a React TypeScript project, which led to my promotion to Associate Software Developer. Collaborating with a Japanese product owner, the project targeted UK-based clients. This gave me valuable experience in an international team, and I grew through active participation in code reviews and leading meetings such as refinement and daily stand-ups.',
       skills: [
@@ -81,7 +81,7 @@ export async function seedExperience(dataSource: DataSource): Promise<void> {
     },
     {
       title: 'Assistant Software Developer',
-      period: '2022/10-2023/04',
+      period: '2022/10 - 2023/04',
       description:
         'At Fujitsu, I began as an Assistant Software Developer, working on a jQuery project to become familiar with scrum and legacy code. Later, I gained hands-on experience writing end-to-end tests in Cypress for a TypeScript-based Angular project, contributing to its ongoing development and ensuring code quality.',
       skills: ['Cypress', 'e2e tests', 'TypeScript', 'jQuery', 'Scrum'],
@@ -93,7 +93,7 @@ export async function seedExperience(dataSource: DataSource): Promise<void> {
   await positionRepository.save([
     {
       title: 'Web Developer',
-      period: '2021-2022',
+      period: '2021 - 2022',
       description:
         "As a Freelance Web Developer, I created custom websites tailored to client needs, focusing on clean design and intuitive user experience. One of my key projects was for a car mechanic, where I balanced functionality with a professional look. I also worked on a boutique project that explored various design approaches, but it didn't reach production.",
       skills: [

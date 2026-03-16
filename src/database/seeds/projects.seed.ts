@@ -59,20 +59,27 @@ export async function seedProjects(dataSource: DataSource): Promise<void> {
       skills: [
         'React',
         'TypeScript',
-        'SCSS',
-        'React Router',
+        'TailwindCSS',
+        'NestJS',
+        'PostgreSQL',
+        'REST API',
         'Responsive Design',
       ],
       details: [
-        'A portfolio website built using React functional components.',
-        'A responsive design that adapts to various screen sizes.',
-        'A clean and modern design that showcases my skills and experience.',
-        'A user-friendly interface that allows visitors to navigate easily.',
+        'A full-stack portfolio app with a React frontend and a NestJS REST API backend.',
+        'Backend serves personal and professional data (experience, projects, skills, certifications) via read-only GET endpoints.',
+        'PostgreSQL database hosted on Supabase, managed with TypeORM migrations and seed scripts.',
+        'Functional contact form with server-side email delivery via Resend and IP-based rate limiting.',
+        'Responsive design built with TailwindCSS, adapting seamlessly across all screen sizes.',
       ],
       technologies: [
-        'React.js: Provides good user experience through Virtual DOM.',
-        'SCSS: Enhances styling capabilities.',
-        'React Router DOM: Creates separate URLs for different sections of the website.',
+        'React.js: Component-based UI with React Router for client-side navigation.',
+        'TypeScript: Static typing across both frontend and backend.',
+        'TailwindCSS: Utility-first styling for rapid, consistent UI development.',
+        'NestJS: Structured backend framework built on Express with dependency injection.',
+        'TypeORM: ORM for entity management, migrations, and database seeding.',
+        'PostgreSQL / Supabase: Managed relational database with connection pooling.',
+        'Resend: Transactional email API for contact form delivery.',
       ],
     },
     {
@@ -348,25 +355,25 @@ export async function seedProjects(dataSource: DataSource): Promise<void> {
     {
       improvement: 'Dark Mode',
       description:
-        'Adding a dark mode feature would provide users with an alternative color scheme that is easier on the eyes, especially in low-light environments.',
+        'Adding a dark mode toggle would let visitors choose their preferred color scheme, improving comfort in low-light environments and aligning with modern UI expectations.',
       project: portfolioWebsite,
     },
     {
-      improvement: 'Contact Form',
+      improvement: 'Professional UX/UI Review',
       description:
-        'Implementing a contact form would allow visitors to get in touch with me directly through the website, making it easier to connect.',
-      project: portfolioWebsite,
-    },
-    {
-      improvement: 'Animations',
-      description:
-        'Adding subtle animations to the website would enhance the user experience and make the site more engaging.',
+        'Consulting with a professional UX/UI designer could surface usability issues, improve visual hierarchy, and elevate the overall impression, especially important for a portfolio aimed at potential employers.',
       project: portfolioWebsite,
     },
     {
       improvement: 'SEO Optimization',
       description:
-        'Optimizing the website for search engines would improve its visibility and help attract more visitors.',
+        'Adding proper meta tags, Open Graph data, and structured markup would improve search engine visibility and make shared links look polished on social media.',
+      project: portfolioWebsite,
+    },
+    {
+      improvement: 'Accessibility (WCAG)',
+      description:
+        'Auditing and improving keyboard navigation, ARIA labels, color contrast ratios, and focus management would ensure the site is usable for everyone and demonstrates awareness of accessibility standards.',
       project: portfolioWebsite,
     },
     {
