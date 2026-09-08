@@ -452,33 +452,33 @@ const improvements: ImprovementSeed[] = [
   },
   {
     projectId: 'wloczkapisane',
-    improvement: 'Orders in a Database',
+    improvement: 'End-to-End Tests',
     description:
-      'Stock is verified when checkout starts but only decremented once the Stripe webhook fires, so two customers can buy the last item within the same minute. Moving orders and stock into PostgreSQL with an atomic decrement would close that window and give the owner an order history that does not live only in Stripe and in an inbox.',
+      'The shop has no automated test suite yet. Covering the paths a customer actually walks - browsing, filtering by category, adding to the cart, filling in the order form - with Playwright would catch regressions before a deploy reaches the shop owner.',
   },
   {
     projectId: 'wloczkapisane',
-    improvement: 'Webhook Idempotency',
+    improvement: 'Customer Accounts',
     description:
-      'Storing processed Stripe event IDs would stop a retried webhook from sending duplicate confirmation emails after a mid-execution failure.',
+      'Supabase is already wired in as a placeholder. Adding authentication on top of it would let returning customers log in, keep their delivery details and order history, and save pieces they like for later, instead of starting from scratch on every visit.',
+  },
+  {
+    projectId: 'wloczkapisane',
+    improvement: 'More Content for SEO',
+    description:
+      'The blog launched with a handful of posts. Publishing regularly - yarn guides, care instructions, the story behind a piece - and expanding the product descriptions would give search engines far more to index and bring in visitors who are not already following the shop on social media.',
+  },
+  {
+    projectId: 'wloczkapisane',
+    improvement: 'Performance Audit',
+    description:
+      'A pass over Lighthouse and Core Web Vitals on the image-heavy shop and gallery pages - image sizes and formats, what renders above the fold, third-party scripts - would show where the shop can load faster, which counts both for how it feels on a phone and for how it ranks.',
   },
   {
     projectId: 'wloczkapisane',
     improvement: 'Automated Shipping Labels',
     description:
       'Shipments are created by hand in the InPost panel today. Generating labels through the ShipX API and mailing the tracking number back to the customer would remove that manual step as order volume grows.',
-  },
-  {
-    projectId: 'wloczkapisane',
-    improvement: 'Customer Accounts',
-    description:
-      'Supabase is already wired in as a placeholder. Using it for accounts would bring order history, saved addresses and a wishlist, turning a one-off purchase into a returning customer.',
-  },
-  {
-    projectId: 'wloczkapisane',
-    improvement: 'End-to-End Tests',
-    description:
-      'The payment path is the part of the shop that must never break. Covering cart, delivery choice and checkout with Playwright would protect it from regressions on every deploy.',
   },
   {
     projectId: 'trello-clone',
