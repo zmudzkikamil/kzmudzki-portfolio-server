@@ -13,26 +13,15 @@ type ImprovementSeed = Omit<Improvement, 'id' | 'project'> & {
   projectId: string;
 };
 
-/**
- * Marks an image that has not been uploaded yet. Screenshots live on
- * Cloudinary (see the URLs below), and a project seeded with a placeholder
- * would show up in the portfolio as a broken image, so `seedProjects` skips
- * any project still carrying one.
- */
-const IMAGE_TODO_PREFIX = 'TODO://';
-
-/**
- * TODO: upload the wloczkapisane.pl screenshots to Cloudinary and replace
- * every value below with its URL. Until that happens the project is skipped
- * by the seed.
- */
+/** Screenshots of the shop, in the order the carousel shows them. */
 const wloczkapisaneImages = {
-  thumbnail: `${IMAGE_TODO_PREFIX}wloczkapisane-home`,
-  home: `${IMAGE_TODO_PREFIX}wloczkapisane-home`,
-  shop: `${IMAGE_TODO_PREFIX}wloczkapisane-shop`,
-  product: `${IMAGE_TODO_PREFIX}wloczkapisane-product`,
-  checkout: `${IMAGE_TODO_PREFIX}wloczkapisane-checkout`,
-  blog: `${IMAGE_TODO_PREFIX}wloczkapisane-blog`,
+  home: 'https://res.cloudinary.com/dwwjjyizc/image/upload/v1789501801/wloczkapisane-home_kua9cl.png',
+  shop: 'https://res.cloudinary.com/dwwjjyizc/image/upload/v1789501800/wloczkapisane-shop_twybiu.png',
+  product:
+    'https://res.cloudinary.com/dwwjjyizc/image/upload/v1789501800/wloczkapisane-product_uiw2hl.png',
+  checkout:
+    'https://res.cloudinary.com/dwwjjyizc/image/upload/v1789501800/wloczkapisane-checkout_g3ottu.png',
+  blog: 'https://res.cloudinary.com/dwwjjyizc/image/upload/v1789501801/wloczkapisane-blog_vxkpg1.png',
 };
 
 const projects: ProjectSeed[] = [
@@ -103,7 +92,8 @@ const projects: ProjectSeed[] = [
     id: 'wloczkapisane',
     category: 'react',
     title: 'Włóczką Pisane',
-    image: wloczkapisaneImages.thumbnail,
+    image: wloczkapisaneImages.shop,
+    url: 'https://wloczkapisane.pl',
     skills: [
       'Next.js',
       'React',
@@ -541,31 +531,17 @@ export async function seedProjects(dataSource: DataSource): Promise<void> {
   const existingIds = new Set(existing.map((project) => project.id));
 
   const missing = projects.filter((project) => !existingIds.has(project.id));
-  const pending = missing.filter((project) =>
-    project.image.startsWith(IMAGE_TODO_PREFIX),
-  );
-  const ready = missing.filter(
-    (project) => !project.image.startsWith(IMAGE_TODO_PREFIX),
-  );
 
-  if (pending.length > 0) {
-    console.log(
-      `⚠ Skipping ${pending
-        .map((project) => project.id)
-        .join(', ')}: image URLs are still placeholders.`,
-    );
-  }
-
-  if (ready.length === 0) {
+  if (missing.length === 0) {
     console.log('✓ Projects data already exists, skipping...');
     return;
   }
 
   console.log(
-    `Seeding projects data (${ready.map((project) => project.id).join(', ')})...`,
+    `Seeding projects data (${missing.map((project) => project.id).join(', ')})...`,
   );
 
-  const saved = await projectRepository.save(ready);
+  const saved = await projectRepository.save(missing);
   const savedById = new Map(saved.map((project) => [project.id, project]));
 
   // Only the projects inserted above get their views and improvements: the

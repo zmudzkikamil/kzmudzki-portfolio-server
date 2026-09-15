@@ -53,6 +53,15 @@ export class Project {
   @Column('simple-json', { nullable: true })
   technologies?: string[];
 
+  @ApiProperty({
+    example: 'https://wloczkapisane.pl',
+    description:
+      'Address of the live project, for the ones that are publicly available',
+    nullable: true,
+  })
+  @Column({ nullable: true })
+  url?: string;
+
   @ApiProperty({ description: 'List of views related to the project' })
   @OneToMany(() => View, (view) => view.project, { cascade: true })
   views: View[];
