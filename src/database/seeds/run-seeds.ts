@@ -1,4 +1,5 @@
 import { AppDataSource } from '../../data-source';
+import { abortIfMigrationsPending } from '../pending-migrations';
 import { seedKnowledge } from './knowledge.seed';
 import { seedAboutMe } from './about-me.seed';
 import { seedExperience } from './experience.seed';
@@ -14,6 +15,8 @@ async function runSeeds() {
       await AppDataSource.initialize();
       console.log('✓ Data Source initialized\n');
     }
+
+    await abortIfMigrationsPending(AppDataSource);
 
     // Run seeds in order (some may have dependencies)
     await seedKnowledge(AppDataSource);

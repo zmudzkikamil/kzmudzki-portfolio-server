@@ -9,11 +9,12 @@ import { View } from './projects/entities/view.entity';
 import { Improvement } from './projects/entities/improvement.entity';
 import { Cert } from './certs/certs.entity';
 import { ContactSubmission } from './contact/contact.entity';
+import { postgresSsl } from './database/postgres-ssl';
 
 export const AppDataSource = new DataSource({
   type: 'postgres',
   url: process.env.DATABASE_URL,
-  ssl: { rejectUnauthorized: false },
+  ssl: postgresSsl(),
   entities: [
     AboutMe,
     Position,

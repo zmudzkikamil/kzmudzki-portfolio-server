@@ -1,4 +1,5 @@
 import { AppDataSource } from '../../data-source';
+import { abortIfMigrationsPending } from '../pending-migrations';
 
 async function clearDatabase() {
   console.log('🗑️  Starting database cleanup...\n');
@@ -8,6 +9,11 @@ async function clearDatabase() {
       await AppDataSource.initialize();
       console.log('✓ Data Source initialized\n');
     }
+
+    // The tables truncated below are the migrations' output, so the same
+    // check applies: on a database that has never been migrated they do not
+    // exist yet, and TRUNCATE would fail just as opaquely.
+    await abortIfMigrationsPending(AppDataSource);
 
     await AppDataSource.query(`
       TRUNCATE TABLE

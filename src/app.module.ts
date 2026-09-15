@@ -16,6 +16,7 @@ import { Improvement } from './projects/entities/improvement.entity';
 import { CertsModule } from './certs/certs.module';
 import { ContactModule } from './contact/contact.module';
 import { ContactSubmission } from './contact/contact.entity';
+import { postgresSsl } from './database/postgres-ssl';
 
 @Module({
   imports: [
@@ -23,7 +24,7 @@ import { ContactSubmission } from './contact/contact.entity';
     TypeOrmModule.forRoot({
       type: 'postgres',
       url: process.env.DATABASE_URL,
-      ssl: { rejectUnauthorized: false },
+      ssl: postgresSsl(),
       entities: [
         AboutMe,
         Position,
