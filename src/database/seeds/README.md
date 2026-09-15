@@ -8,6 +8,22 @@ Seeds are used to populate the database with initial data for development, testi
 
 ## 🚀 Usage
 
+### Migrations come first
+
+Seeds insert data, they never touch the schema, so the tables have to exist and
+be current before any of the commands below will work:
+
+```bash
+npm run migration:show   # what is pending
+npm run migration:run    # apply it
+```
+
+The API runs pending migrations itself when it boots, so a database the API has
+started against is already up to date. A database that has only ever been
+seeded is not — and seeding into a schema that predates a column an entity
+declares used to fail with a bare `column Project.url does not exist`. The seed
+scripts now stop with an explanation instead.
+
 ### Run All Seeds
 
 ```bash
