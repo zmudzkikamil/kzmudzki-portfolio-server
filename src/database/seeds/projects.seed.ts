@@ -90,7 +90,7 @@ const projects: ProjectSeed[] = [
   },
   {
     id: 'wloczkapisane',
-    category: 'react',
+    category: 'fullstack',
     title: 'Włóczką Pisane',
     image: wloczkapisaneImages.shop,
     url: 'https://wloczkapisane.pl',
