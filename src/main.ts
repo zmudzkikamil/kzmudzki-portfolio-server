@@ -4,6 +4,7 @@ import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { AppModule } from './app.module';
 import { NestExpressApplication } from '@nestjs/platform-express';
 import { join } from 'path';
+import { corsOrigins } from './cors-origins';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
@@ -11,11 +12,8 @@ async function bootstrap() {
     prefix: '/public/',
   });
 
-  const origins = (process.env.CORS_ORIGINS ?? 'http://localhost:5173')
-    .split(',')
-    .map((o) => o.trim());
   app.enableCors({
-    origin: origins,
+    origin: corsOrigins(),
     methods: ['GET', 'POST'],
   });
 
