@@ -585,11 +585,8 @@ Without this, the `class-validator` decorators on the DTO do nothing.
 ### CORS update
 
 ```typescript
-const origins = (process.env.CORS_ORIGINS ?? 'http://localhost:5173')
-  .split(',')
-  .map((o) => o.trim());
 app.enableCors({
-  origin: origins,
+  origin: corsOrigins(),
   methods: ['GET', 'POST'],  // ← POST added for the contact form
 });
 ```
@@ -599,6 +596,8 @@ CORS (Cross-Origin Resource Sharing) is a browser security feature. Without it, 
 Previously only `'GET'` was allowed. The contact form needs `POST`, so it was added.
 
 The origins come from `CORS_ORIGINS` in your `.env` file, split by comma. This lets you add your production frontend URL without changing code.
+
+`corsOrigins()` (in `src/cors-origins.ts`) does the splitting, and completes each domain with its www counterpart: `https://zkamil.eu` admits `https://www.zkamil.eu` too. Both hosts serve the site, and which one a visitor lands on is a hosting setting, so listing only one of them would block every request from the other — as a bare "Network Error", since the browser stops the response before the frontend can read a status off it.
 
 ---
 
